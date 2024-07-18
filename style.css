@@ -1,0 +1,114 @@
+*{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.py{
+    text-align: left;
+    font-size: 4rem;
+    font-style: normal;
+    padding-left: 30px;
+    color: white;
+    
+}
+nav{
+    background-color:#346ea0;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+ul{
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: space-between;
+}
+li{
+    list-style: none;
+    margin-right: 20px;
+}
+nav a {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  nav a:hover{
+    color: lightcoral;
+  }
+.body{
+    background-color: #224868;
+}
+.image{
+    width: 200px; /* Set a default width */
+    max-width: 100%; /* Ensure it doesn't overflow the container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto; /* Center the image with margin */
+    display: block;
+}
+.logo{
+    font-size: 100px;
+    color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.fa{
+    padding-left: 2rem;
+}
+.body2{
+    background-color: black;
+    padding-left: 10px;
+}
+.introduction{
+    font-size: 25px;
+    padding-left: 4rem;
+    padding-top: -30px;
+}
+/* CSS */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* .intro {
+    flex-basis: 50%;
+    padding: 20px;
+  } */
+  
+  .image {
+    flex-basis: 200rem;
+    text-align: center;
+  }
+  
+  .image img {
+    width: 50%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  .pix{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .iframe{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  @media(max-width:800px){
+    .body{
+      width: 80vw;
+    }
+    .image{
+      display: none;
+    }
+  }
+  
