@@ -1,0 +1,142 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+@font-face {
+    font-family: epic;
+    src: url(Inter-Bold.ttf);
+}
+@font-face {
+    font-family: fancy;
+    src: url(Maverick\ Medium.otf);
+}
+body {
+/* Adding a font family for better appearance */
+    background-color: #E1DDDD;
+    font-family: epic;
+}
+
+nav {
+    color: rgb(41, 39, 39);
+    background-color:#E1DDDD;
+    padding: 1em;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%; /* Initial width for larger screens */
+    height: auto; /* Auto height to adjust to content */
+    margin: 1em auto; /* Center the nav horizontally */
+    max-width: 500px; /* Maximum width for the nav */
+    left: 0%;
+    margin-left: 70px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    padding: 0.5em 1em; /* Padding for better touch targets on mobile */
+    color: rgb(41, 38, 38);
+}
+a{
+    text-decoration: none;
+    color: rgb(41, 38, 38);
+    font-size:large;
+    font-family: epic;
+    font-style: bold;
+}
+a:hover{
+    color: tomato;
+
+}
+.heading{
+   margin-right: 15rem;
+}
+.button{
+    width: 80px;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: tomato;
+    color: white;
+    height: 2rem;
+    margin-right: 80px;
+}
+button:hover {
+    color: white; /* Change text color on hover */
+    background: linear-gradient(#7067AD, #855BA4); /* Change background on hover */
+    cursor: pointer;
+}
+hr {
+    border: none; /* Removes the default border */
+    height: 2px; /* Thickness of the line */
+    background-color: red; /* Line color */
+    margin: 1em 0; /* Space around the line */
+}
+.text{
+    font-size: 4rem;
+    font-family: fancy;
+    margin-left: 13rem;
+    margin-top: 0px;
+    height: auto;
+    width: 400px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.image-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+    padding-right: 200px;
+}
+
+.image {
+    max-width: 90%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    nav {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 0.5em; /* Reduce padding for smaller screens */
+    }
+
+    ul {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    li {
+        padding: 0.5em 0; /* Adjust padding for vertical layout */
+    }
+}
+.view{
+    font-family: fancy;
+    font-size: 20px;
+    border: 5px;
+    border-radius: 3rem;
+    width: 9rem;
+    height: 2rem;
+    background-color: red;
+    color: white;
+
+}
+.review{
+    font-family: fancy;
+    font-size: 20px;
+    border: 5px;
+    border-radius: 3rem;
+    width: 9rem;
+    height: 2rem;
+}
