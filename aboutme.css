@@ -1,109 +1,181 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
-    padding: 0
-}
-body{
+    padding: 0;
+  }
+  body {
     background-color: #f6f7f7;
-}
-.all{
+  }
+  .all {
     font-size: 3rem;
     font-style: normal;
     display: flex;
-    justify-content: center;
     justify-content: space-between;
-}
-.photo{
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  }
+  .photo {
     width: 400px;
     height: auto;
     clip-path: circle();
-}
-.text{
-    justify-content: center;
+    max-width: 100%; /* Ensures the image scales on smaller screens */
+  }
+  .text {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Ensures text wraps on smaller screens */
     padding-top: 90px;
     padding-left: 120px;
-}
-.photo1{
-padding-right: 140px;
-padding-top: 30px;
-}
-.epic{
-padding-bottom: 100px;
-padding-top: 30px;
-padding-left: 20px;
-}
-nav{
-    background-color:white;
+  }
+  .photo1 {
+    padding-right: 140px;
+    padding-top: 30px;
+  }
+  .epic {
+    padding-bottom: 100px;
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+  nav {
+    background-color: white;
     padding: 1em;
     text-align: center;
     color: rgb(20, 18, 18);
     border-radius: 10px;
-}
- ul{
+  }
+  ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
-    }
-li{
-        list-style: none;
-        margin-right: 20px;
-    }
-nav a {
-        color: rgb(17, 14, 14);
-        font-size: 2rem;
-        text-decoration: none;
-        transition: color 0.2s ease;
-      }
-nav a:hover{
-        color: lightcoral;
-      }
-    @font-face {
-        font-family: epic;
-        src: url(Inter-Bold.ttf);
-    }
-    nav{
-        font-family: epic;
-        color: #000053;
-    }
-    /* .iam{
-        font-size: 2rem;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 130px;
-        padding-top: -20px;
-    } */
-.h1{
+    flex-wrap: wrap; /* Makes navigation items stack on smaller screens */
+  }
+  li {
+    list-style: none;
+    margin-right: 20px;
+  }
+  nav a {
+    color: rgb(17, 14, 14);
+    font-size: 2rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  nav a:hover {
+    color: lightcoral;
+  }
+  @font-face {
+    font-family: epic;
+    src: url(Inter-Bold.ttf);
+  }
+  nav {
+    font-family: epic;
+    color: #000053;
+  }
+  .h1 {
     font-size: xx-large;
-}
-.h2{
+  }
+  .h2 {
     font-size: xx-large;
-    padding-top: -0;
-}
-.icons{
+  }
+  .icons {
     padding-left: 120px;
     padding-bottom: 10px;
-}
-.facebook{
-    color: #0865FF;
-}
-.insta{
+  }
+  .facebook {
+    color: #0865ff;
+  }
+  .insta {
     padding-left: 20px;
     width: auto;
     height: auto;
     color: red;
-}
-.Github{
+  }
+  .Github {
     padding-left: 20px;
     color: black;
-}
-.linkedin{
+  }
+  .linkedin {
     padding-left: 20px;
-    color: #0B66C3;
-}
-.mail{
+    color: #0b66c3;
+  }
+  .mail {
     padding-left: 20px;
     color: red;
-}
+  }
+  
+  /* Responsive Design */
+  
+  /* For tablets and smaller devices */
+  @media (max-width: 768px) {
+    .all {
+      font-size: 2.5rem; /* Reduce font size */
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center;
+    }
+    .text {
+      padding: 20px; /* Reduce padding */
+    }
+    .photo {
+      width: 300px; /* Adjust image size */
+    }
+    nav ul {
+      flex-direction: column; /* Stack navigation items */
+      align-items: center;
+    }
+    nav a {
+      font-size: 1.8rem; /* Adjust font size */
+      margin-bottom: 10px; /* Add spacing */
+    }
+  }
+  
+  /* Responsive Design */
+
+/* For mobile phones */
+@media (max-width: 576px) {
+    .all {
+      font-size: 2rem;
+    }
+    .photo {
+      width: 200px; /* Further reduce image size */
+    }
+    .text {
+      padding: 10px; /* Reduce padding for very small screens */
+    }
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav a {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+    
+    /* Centering the icons */
+    .icons {
+      display: flex; /* Enable flexbox */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically (if needed) */
+      padding: 10px 0; /* Adjust padding */
+      flex-wrap: wrap; /* Allow wrapping if necessary */
+      gap: 10px; /* Space between icons */
+    }
+    
+    .facebook {
+      color: #0865ff;
+    }
+    .insta {
+      width: auto;
+      height: auto;
+      color: red;
+    }
+    .Github {
+      color: black;
+    }
+    .linkedin {
+      color: #0b66c3;
+    }
+    .mail {
+      color: red;
+    }
+  }
+  
